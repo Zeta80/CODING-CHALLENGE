@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;    
+}
+
+body{        
+    background-image: url(./immagini/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;   
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.quadro-opaco{
+    text-align: center;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.5); /* sfondo nero con 50% di opacità */   
+    border-radius: 20px;
+    padding: 100px;        
+}
+
+div.quadro-opaco{  
+    margin: 50px auto auto auto;
+}
+
+header{
+    font-size: 32px;
+    color: #00ed00; 
+    margin-bottom: 10px;
+}
+
+header > img{ 
+    width: 220px;
+}
+
+nav div{
+    background-color: rgb(34, 225, 34);
+    padding: 10px;
+}
+
+main{
+    text-align: left;
+    color: white;
+    width: 600px;
+}
+
+main h3{
+    display: inline-block;    
+    font: bold;    
+}
+
+main h3, p{
+    margin-bottom: 5px;
+}
+
+div.stato-carica{
+    width: 100%; 
+    background-color: rgb(26, 197, 26);   
+    padding: 13px;
+    border-radius: 5px;    
+}
+
+div.stato-carica.media{
+    width: 60%;
+    background-color: rgb(253, 177, 56);
+    padding: 13px;
+}
+
+div.stato-carica.scarica{
+    width: 20%;
+    background-color: rgb(196, 60, 60);
+    padding: 13px;
+}
+/* sono op (╯°□°）╯︵ ┻━┻ */
+main div h3 + p::before{ 
+    content:"\21A6"        
+}
